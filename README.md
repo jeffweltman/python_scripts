@@ -2,5 +2,8 @@
 Miscellaneous Python scripts to standardize and simplify
 --Tested and verified for Python 3.6.2--
 
-Required Packages: 
-openpyxl - SetFilenameAsWorksheetName.py
+SetFilenameAsWorksheetName.py
+  Required packages os, openpyxl
+
+  This script will iterate through Excel workbooks in a specified directory and will set the worksheet name to match the filename + a       dollar sign. If the worksheet name already matches this convention it will continue without changing. Optional print commmands are       included to output the filename and whether or not the worksheet was named correctly.
+  
