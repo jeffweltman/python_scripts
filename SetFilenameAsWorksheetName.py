@@ -7,7 +7,7 @@
 def main():
     import os
     import openpyxl
-    target_dir = ('C:\\Users\\46669510\\Documents\\PythonTest') # set target directory
+    target_dir = ('C:\\Users\\administrator\\Documents\\PythonTest') # set target directory
     pathiter = (os.path.join(root, filename)
         for root, _, filenames in os.walk(target_dir)
         for filename in filenames
