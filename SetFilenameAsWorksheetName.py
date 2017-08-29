@@ -16,8 +16,6 @@ def main():
         filename = path.lstrip(target_dir) # this gets the name and extension of the current workbook
         book = filename.rstrip('.xlsx') # this strips the extension
         #print(book) 
-        dollar = '$'
-        newtitle = book + dollar
         badname = 'Worksheet for {} was not correct.'.format(book)
         goodname = 'Worksheet for {} is correct.'.format(book)
         from openpyxl import load_workbook
@@ -26,8 +24,8 @@ def main():
         #print(ws)
         #print(wb.sheetnames)
         for sheet in wb:
-            if ws.title != newtitle:
-                ws.title = newtitle
+            if ws.title != book:
+                ws.title = book
                 print(badname)
             else:
                 print(goodname)
