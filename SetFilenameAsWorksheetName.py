@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+s#!/usr/bin/python3
 #SetFilenameAsWorksheetName.py
 #created by Jeff Weltman
 #https://github.com/jeffweltman/python_scripts
@@ -18,8 +18,8 @@ def main():
         #print(book) 
         dollar = '$'
         newtitle = book + dollar
-        badname = 'Workheet for {} was not correct.'.format(book)
-        goodname = 'Workheet for {} is correct.'.format(book)
+        badname = 'Worksheet for {} was not correct.'.format(book)
+        goodname = 'Worksheet for {} is correct.'.format(book)
         from openpyxl import load_workbook
         wb = load_workbook(path)
         ws = wb.active
