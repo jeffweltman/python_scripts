@@ -3,13 +3,13 @@ Miscellaneous Python scripts to standardize and simplify
 ## *Tested and verified for Python 3.6.2 on Windows 10*
 
 ### SetFilenameAsWorksheetName.py
-  *Required packages: os, openpyxl
+  *Required packages: os, openpyxl*
 
 This script will iterate through Excel workbooks in a specified directory and will set the worksheet name to match the filename. 
 If the worksheet name already matches, it will continue without changing. 
 Optional print commmands are included to output the filename and whether or not the worksheet was named correctly.
   
 ### RenameColumns.py
-  *Required packages: os, openpyxl
+  *Required packages: os, openpyxl*
   
 This script will iterate through Excel workbooks in a specified directory and replace specified column names with a target column name.
