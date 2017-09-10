@@ -7,7 +7,7 @@
 def main():
     import os
     import openpyxl
-    target_dir = ('C:\\users\jeffw\Documents') # set target directory
+    target_dir = ('Documents') # set target directory
     for file in os.listdir(target_dir):
         filename = os.fsdecode(file)
         if filename.endswith('.xlsx'): #looking only at Excel docs
