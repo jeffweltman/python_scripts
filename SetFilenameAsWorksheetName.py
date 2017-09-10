@@ -2,7 +2,8 @@
 #SetFilenameAsWorksheetName.py
 #created by Jeff Weltman
 #https://github.com/jeffweltman/python_scripts
-#v1.0 8/29/2017
+#v2.0 9/10/2017
+#Requires openpyxl package
 
 def main():
     import os
