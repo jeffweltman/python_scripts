@@ -15,6 +15,6 @@ Optional print commmands are included to output the filename and whether or not 
 This script will iterate through Excel workbooks in a specified directory and replace specified column names with a target column name.
 
 ### ConvertXLSXtoCSV.py
- *Required packages: os, openpyxl,csv*
+ *Required packages: os, openpyxl, csv*
 
 This script will iterate through Excel workbooks in a specified directory and convert the XLSX to a CSV. I had not found a great Python3 script to accomplish this, so I created one.
