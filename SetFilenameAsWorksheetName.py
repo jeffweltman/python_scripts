@@ -2,7 +2,7 @@
 #SetFilenameAsWorksheetName.py
 #created by Jeff Weltman
 #https://github.com/jeffweltman/python_scripts
-#v2.0 9/10/2017
+#v3.0 10/30/2017
 #Requires openpyxl package
 
 def main():
@@ -13,11 +13,12 @@ def main():
         filename = os.fsdecode(file)
         if filename.endswith('.xlsx'): #looking only at Excel docs
             book = filename.rstrip('.xlsx') # this strips the extension
+            fullpath = target_dir + "/" + filename
             #print(book) 
             badname = 'Worksheet for {} was not correct.'.format(book)
             goodname = 'Worksheet for {} is correct.'.format(book)
             from openpyxl import load_workbook
-            wb = load_workbook(filename)
+            wb = load_workbook(fullpath)
             ws = wb.active
             #print(ws)
             #print(wb.sheetnames)
@@ -28,6 +29,6 @@ def main():
                 else:
                   print(goodname)
                   continue
-                wb.save(filename)
+                wb.save(fullpath)
 
 if __name__ == "__main__": main()
